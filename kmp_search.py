@@ -1,9 +1,5 @@
 def build_lps(pattern):
-    """
-    Build the Longest Prefix Suffix (LPS) array for KMP.
-    LPS[i] = length of the longest proper prefix of pattern[:i+1]
-             which is also a suffix of pattern[:i+1]
-    """
+
     lps = [0] * len(pattern)
     prefix_len = 0  
     i = 1
@@ -24,10 +20,6 @@ def build_lps(pattern):
 
 
 def kmp_search(text, pattern):
-    """
-    Perform KMP search.
-    Returns a list of starting indices where pattern is found in text.
-    """
     if not pattern or not text:
         return []
 
