@@ -1,4 +1,5 @@
 Genetic Sequence Identifier
+
 Team 33: Bellina Milito, Anish Subramanian, Samuel Zheng
 
 Overview: Python program that implements Knuth-Morris-Pratt and Rabin-Karp algorithms to identify specific genetic sequences within large DNA datasets.
