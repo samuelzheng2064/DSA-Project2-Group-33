@@ -9,13 +9,23 @@ Python program that implements Knuth-Morris-Pratt and Rabin-Karp algorithms to i
 In bioinformatics and medical software development, rapid and memory‑efficient sequence matching is essential for early disease diagnosis and genetic research. Our program demonstrates how optimized algorithms can process millions of base pairs while searching against thousands of known mutations — enabling faster, more scalable clinical analysis.
 
 ## Features: 
--Genome loading
+- Genome loading: 
+  - Supports FASTA genome files of any size
+  - Automatically skips FASTA header lines, cleans whitepasce, and concatenates all sequence lines into a single continuous DNA string
+  - Ensures consistent formatting by converting all bases to uppercase
 
--Multiple input options
+- Flexible input options
+  - CSV mutation database input
+      - Allows to search for multiple mutation motifs in one run
+  - Single mutation input
+      - Warns when an inputted sequence has non-DNA characters to detect input typos
 
--Function selection between the KMP algorithm, Rabin-Karp algorithm, or both
+- Function selection options
+  - KMP Algorithm : Efficent prefix-based pattern matching using and LPS table to skip redundant comparisons
+  - Rabin-Karp Algorithm : Rolling hash-based matching optimized for scanning large genomes
+  - Dual-Mode comparison : Users can run both algorithms in a single run to compare preformance and optimize accuracy. 
 
--Benchmarking
+- Benchmarking : Every run reports search time, whether the mutation was found, all indicies where the mutation occurs, and which algorithm was used.
 
 ## Project structure: 
 main/
