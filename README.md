@@ -57,6 +57,8 @@ Open a terminal in that folder and run python3 main.py
 
 Then follow the prompts
 
+Note: for the second prompt "Enter red flag mutation sequence (or path to database):" you can also have a path to a CSV file containing multiple mutations
+
 ## Example usage: 
 
 === Exact Sequence Motif Finder ===
