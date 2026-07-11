@@ -21,6 +21,11 @@ def main():
 
     # figure out if they typed a sequence or gave us a csv file to load
     if mutation_input.lower().endswith(".csv") or os.path.exists(mutation_input):
+        # they meant to give us a file, so make sure it actually exists before
+        # we try to open it, otherwise read_mutations crashes on a bad path
+        if not os.path.exists(mutation_input):
+            print("That mutation file does not exist. Please check the path and try again.")
+            return
         mutations = read_mutations(mutation_input)
         if len(mutations) == 0:
             print("No valid mutation sequences were found in that file.")
