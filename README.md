@@ -75,9 +75,9 @@ Initializing search...
 
 Analysis Complete
 
-Mutation 'ATGCGT' found at index 45012
+Mutation 'ATGCGTACGT' found at index 708333
 
-Mutation 'ATGCGT' found at index 89201
+Mutation 'ATGCGTACGT' found at index 1068458
 
 |
 
@@ -85,15 +85,15 @@ Mutation 'ATGCGT' found at index 89201
 
 Strategy Employed: KMP Algorithm
 
-Algorithm Execution Time: 0.120381 seconds
+Algorithm Execution Time: 0.089552 seconds
 
 |
 
 Analysis Complete
 
-Mutation 'ATGCGT' found at index 45012
+Mutation 'ATGCGTACGT' found at index 708333
 
-Mutation 'ATGCGT' found at index 89201
+Mutation 'ATGCGTACGT' found at index 1068458
 
 |
 
@@ -101,7 +101,7 @@ Mutation 'ATGCGT' found at index 89201
 
 Strategy Employed: Rabin-Karp Algorithm
 
-Algorithm Execution Time: 0.089552 seconds
+Algorithm Execution Time: 0.120381 seconds
 
 
 ## References: 
