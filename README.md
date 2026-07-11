@@ -46,6 +46,15 @@ main/
 
 |-- test.py : testing utilities
 
+
+## Requirements:
+Python 3
+
+## How to run:
+Download a FASTA genome file into that folder. We used the E. coli K-12 reference genome (NCBI accession U00096.3). You also use the same file as us by seeing the References section below for the download link. However, any FASTA file will also work.
+Open a terminal in that folder and run python3 main.py
+Then follow the prompts
+
 ## Example usage: 
 
 === Exact Sequence Motif Finder ===
